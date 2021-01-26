@@ -1,0 +1,119 @@
+body, textarea{
+  font-family: sans-serif;
+}
+
+/* contendor principal */
+.contenedor {
+  display: flex;
+  justify-content: space-around;   
+}
+
+/* tabla */
+table {
+  width: 500px;
+  margin: 10px;
+  margin-top: 65px;
+  border: 1px solid #2cccd3;  
+  text-align:center;
+  border-collapse:collapse; 
+
+}     
+
+table th {
+  background-color: #2cccd3;
+  color: white;
+  border: 1px solid #2cccd3;  
+  padding: 5px;
+}
+
+table td {
+  border: 1px solid #2cccd3;  
+  padding: 5px;
+}
+
+
+/* formulario */
+
+h3 {
+  color: #2cccd3;     
+  font-size: 25px;
+  margin: 10px;
+}   
+
+a {
+  
+  color: #2cccd3;
+  font-weight: bold;
+}
+
+form {
+  width: 50%;  
+  margin-top: 10px;
+}
+
+input {
+  width: 500px;
+  height: 15px;
+  border: 1px solid #2cccd3;   
+  margin: 10px;
+  padding: 5px;
+}
+
+
+textarea {
+  width: 500px;
+  height: 100px;	
+  border: 1px solid #2cccd3;       
+  margin: 10px;
+  padding: 8px;
+}
+
+button {
+  width: 80px;
+  height: 40px;  
+  background-color: #2cccd3;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #2cccd3;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #2ccbd3de;
+}
+
+@media (max-width: 650px) {
+
+
+  table {
+    width: 90%;
+    
+  }
+
+  textarea {
+    width: 400px;
+  }
+  
+  input {
+    width: 400px;
+  }
+  
+  }
+
+  @media (max-width: 1100px) {
+
+    .contenedor {
+      flex-direction: column;
+    }
+    
+    table {
+      margin-top: 40px;
+      text-align: center;
+    }
+        
+    caption {
+      text-align: center;
+    }
+    
+    }
