@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('form');
-});
+Route::resource('posts', 'App\Http\Controllers\PostController' , [
+    'names' => [
+        'index' => 'posts',
+        'create' => 'posts_create',
+        'store' => 'posts_store',
+        'destroy' => 'posts_destroy',
+        'show' => 'posts_show',
+    ]
+]);

@@ -1,5 +1,26 @@
+const { default: axios } = require('axios');
+
 require('./bootstrap');
 
+document
+.getElementById('btn-send')
+.addEventListener("click", function() {
+
+  console.log('hola');
+  const form = document.getElementById('form-post');
+  const data = new FormData(form);
+  const url = form.action;
+
+  const sendPostRequest = async() => {
+    try {
+      const resp = await axios.post(url, data);
+    } catch (err) {
+
+    }
+  }
+
+  sendPostRequest();
+});
 
 // fetch(url,{
 //     method: 'GET',
@@ -8,14 +29,6 @@ require('./bootstrap');
 //     },
 //     body: form
 // })
-
-
-// Para el form
-function muestraMensaje() {
-    alert('Todo bien');
-  }
-document.getElementById("btn-send").onclick = muestraMensaje;
-
 
 //   SVG DE EDITAR
   function Editar() {

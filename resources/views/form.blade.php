@@ -8,8 +8,9 @@
 </head>
 <body>
 <div class="contenedor">
-      <form action="">
-      <!-- {{ csrf_field() }} -->
+      <form action="{{route('posts_store')}}" id="form-post">
+            {{ csrf_field() }} 
+            
             <h3>Blog</h3>
             <div class="input-title">	
                   <input type="text" name="title" id="title" placeholder="Titulo"> <br>
@@ -64,5 +65,5 @@
 </div>
 
 </body>
-<script type="text/javascript" src="{{ mix('/js/app.js')}}"></script>
+<script type="text/javascript" src="{{mix('/js/app.js')}}"></script>
 </html>
