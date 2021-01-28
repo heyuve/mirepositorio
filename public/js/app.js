@@ -1840,7 +1840,33 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // fetch(url,{
+//     method: 'GET',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+//     body: form
+// })
+// Para el form
+
+
+function muestraMensaje() {
+  alert('Todo bien');
+}
+
+document.getElementById("btn-send").onclick = muestraMensaje; //   SVG DE EDITAR
+
+function Editar() {
+  alert('Todo bien');
+}
+
+document.getElementById("icon-edit").onclick = Editar; //   SVG DE ELIMINAR
+
+function Eliminar() {
+  alert('Todo bien');
+}
+
+document.getElementById("icon-delete").onclick = Eliminar;
 
 /***/ }),
 
