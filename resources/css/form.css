@@ -3,7 +3,7 @@ body, textarea{
 }
 
 /* contendor principal */
-.contenedor {
+.contenedor, .two-columns {
   display: flex;
   justify-content: space-around;   
 }
@@ -103,7 +103,7 @@ button:hover {
 
   @media (max-width: 1100px) {
 
-    .contenedor {
+    .contenedor, .two-columns {
       flex-direction: column;
     }
     

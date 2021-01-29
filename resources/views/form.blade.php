@@ -15,15 +15,6 @@
             <div class="input-title">	
                   <input type="text" name="title" id="title" placeholder="Titulo"> <br>
             </div>
-            <!-- <div class="input2">
-                  <input type="text" name="apellido" id="apellido" placeholder="Apellidos"> <br>
-            </div>
-            <div class="input3">
-                  <input type="email" name="correo" id="correo" placeholder="Email"> <br>
-            </div>
-            <div class="input4">
-                  <input type=text name="tel" id="tel" placeholder="Teléfono"> <br>
-            </div> -->
             <div class="textarea-content">
                   <textarea name="content" id="content" placeholder="Introduce tu mensaje"></textarea>
             </div>
