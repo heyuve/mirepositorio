@@ -1867,7 +1867,6 @@ var _require = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 document.getElementById('btn-send').addEventListener("click", function () {
-  console.log('hola');
   var form = document.getElementById('form-post');
   var data = new FormData(form);
   var url = form.action;
@@ -1885,19 +1884,21 @@ document.getElementById('btn-send').addEventListener("click", function () {
 
             case 3:
               resp = _context.sent;
-              _context.next = 8;
+              document.getElementById.innerHTML = resp.data.table; // console.log(resp.data.table)
+
+              _context.next = 9;
               break;
 
-            case 6:
-              _context.prev = 6;
+            case 7:
+              _context.prev = 7;
               _context.t0 = _context["catch"](0);
 
-            case 8:
+            case 9:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[0, 6]]);
+      }, _callee, null, [[0, 7]]);
     }));
 
     return function sendPostRequest() {

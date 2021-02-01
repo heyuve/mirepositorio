@@ -6,7 +6,6 @@ document
 .getElementById('btn-send')
 .addEventListener("click", function() {
 
-  console.log('hola');
   const form = document.getElementById('form-post');
   const data = new FormData(form);
   const url = form.action;
@@ -14,6 +13,8 @@ document
   const sendPostRequest = async() => {
     try {
       const resp = await axios.post(url, data);
+      document.getElementById.innerHTML = resp.data.table;
+      // console.log(resp.data.table)
     } catch (err) {
 
     }

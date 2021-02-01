@@ -17,7 +17,11 @@ class PostController extends Controller
     }
 
     public function index() {
-        return view('usuarios');
+
+        $view = View::make('usuarios')
+        ->with('posts' , $this->post->get());
+
+        return $view;
     }
 
     public function store(Request $request)
@@ -31,6 +35,12 @@ class PostController extends Controller
         $view = View::make('usuarios')
         ->with('post' , $post)
         ->with('posts' , $this->post->get())
+        ->renderSections();
+
+        return response()->json([
+            'table' => $view['table'],
+            'form' => $view['form']
+        ]);
 
     }
 
