@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
-use Illuminate\Support\Facades\view;
+use Illuminate\Support\Facades\View;
 
 class PostController extends Controller
 {
